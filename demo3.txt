@@ -1,4 +1,0 @@
-firt demo with dit
-   - create folder
-   - create git project
-   - create files edit and save
