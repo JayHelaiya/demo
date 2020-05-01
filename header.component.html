@@ -1,0 +1,46 @@
+<mat-toolbar >
+ <mat-toolbar-row>
+  <span>
+    <img class="img-fluid" src="assets/images/fox.png">  
+  </span>
+
+   <span>
+    <p class="toolbarname"> Jayesh Helaiya</p>
+   </span>
+
+   <span>
+    <p class="toolbarname">|</p>
+   </span>
+   <mat-form-field id=menuItem-3 class="example-full-width">
+    <input matInput class="toolbarname">
+  </mat-form-field>
+ 
+  <span class="example-spacer"></span>
+  <mat-icon id=menuItem-1 class="material-icons">search</mat-icon>
+
+  <span class="fill-remaining-space">
+    <button #r="matMenuTrigger" mat-icon-button [matMenuTriggerFor]="menu" >
+      <mat-icon id=menuItem-1 (mouseover)="open(r)"  >menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item>
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>people_outline</mat-icon>
+        <span>Connecting</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>videocam</mat-icon>
+        <span>Let's talk</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </span>
+
+</mat-toolbar-row>
+</mat-toolbar>

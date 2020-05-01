@@ -1,0 +1,44 @@
+.mat-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgb(32, 32, 122);
+}
+
+.app-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+
+.img-fluid {
+  max-height: 120% !important;
+  display: inline;
+  max-width: 7% !important;
+  margin-right: 1% !important;
+  background-color: rgb(32, 32, 122);
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 16px 0 0;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.toolbarname {
+  margin: 2px 6px 0 0;
+  color:#ceceda;
+  font-size: 14px; 
+}
+
+#menuItem-1,#menuItem-2,#menuItem-3{
+  color:#ceceda
+}
